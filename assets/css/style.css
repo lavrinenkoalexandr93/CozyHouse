@@ -159,7 +159,7 @@ h6 {
 }
 @media (max-width:767px) {
   .intro {
-    background: url(../../img/Dog.png) left no-repeat;
+    background: url("../../img/Dog.png") left no-repeat;
   }
 }
 .intro-inner {
