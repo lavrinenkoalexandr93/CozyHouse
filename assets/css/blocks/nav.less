@@ -1,0 +1,91 @@
+// main: ../style.less
+
+.nav {
+
+    
+ 
+     
+    @media @mobile {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(32, 30, 30, 1);
+        transition: all .3s ease 0s;
+
+        &.active {
+            top:0;
+        }
+    }
+    
+    
+
+    .nav-list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+    
+
+    
+
+    @media @mobile {
+        margin: 120px 0 0 0;
+        display: block;
+        text-align: left;
+        
+    }
+
+    li {
+        margin-right: 2rem;
+        @media @mobile {
+            margin-bottom: 2rem;
+        }
+    }
+        
+    }
+
+    
+    
+
+    .nav-link {
+        
+
+        margin-right: 2rem;
+
+        color: @white;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+
+        cursor: pointer;
+
+        
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            background-color: @gold;
+            height: 2px;
+            width: 0;
+
+            transition: width .2s ease-in-out;
+        }
+
+        &:hover {
+            &::after {
+                
+                width: 100%;
+            }
+        }
+    
+    }
+}

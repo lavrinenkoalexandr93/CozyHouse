@@ -1,0 +1,143 @@
+// main: ../style.less
+
+.footer {
+    background-color: #000000;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    overflow: hidden;
+
+    @media @tablet {
+        padding: 0 0 1.5rem;
+    }
+}
+
+.footer-item {
+    flex: 0 0 33%;
+
+    &--big {
+        flex: 0 0 66%;
+    }
+
+    .footer-item__slot {
+        display: flex;
+        
+        vertical-align: middle;
+        align-items: center;
+        
+        @media @mobile {
+            flex-wrap: wrap;
+            margin-left: 30%;
+            
+            
+        }
+
+        @media @mobile-sm {
+            margin-left: 25%;
+        }
+        
+    }
+
+   
+
+    .footer-item__title {
+        color: @white;
+        font-size: 2.3333rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-right: 14rem;
+
+        &:last-child {
+            margin-right: 0;
+            float: left;
+            
+        }
+
+        @media @laptop {
+            font-size: 2rem;
+        }
+
+        @media @tablet {
+            display: none;
+        }
+    }
+
+    .footer-item__contact {
+        display: flex;
+        flex-wrap: wrap;
+       
+        width: 100%;
+
+        margin-right: 11rem;
+        margin-top: 2.5rem;
+    
+        vertical-align: middle;
+        align-items: center;
+        
+        color: @gold;
+        font-size: 1.3333rem;
+        font-weight: 400;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media @laptop {
+            font-size: 1rem;
+        }
+
+        @media @mobile-sm {
+           font-size: .7rem;
+           flex-basis: 100%;
+           
+           
+        }
+        
+
+        img {
+            margin-right: 2rem;
+
+            
+        }
+
+        @media @mobile {
+            margin-right: 0;
+            
+        }
+
+        @media @mobile-sm {
+            flex-basis: 100%;
+        }
+        
+    }
+
+    @media @tablet {
+        flex: 0 0 100%;
+    }
+
+    
+}
+
+.footer-item__pic {
+
+    float: right;
+    
+    margin-bottom: -3rem;
+  
+ 
+
+    img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 317px;
+    }
+
+    @media @tablet {
+        display: none;
+    }
+}

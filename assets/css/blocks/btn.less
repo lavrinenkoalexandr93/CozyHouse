@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.btn {
+    display: inline;
+    color: @black;
+    text-decoration: none;
+    background-color: @gold;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+
+    transition: all .2s linear;
+
+    @media @mobile {
+        padding: .8rem 1.2rem;
+        
+    }
+
+    @media @mobile-sm {
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: @black;
+        color: @gold;
+    }
+
+    &--friends {
+        background-color: @white;
+        border: 2px solid @gold;
+
+        transition: all .2s linear;
+        
+        &:hover {
+            background-color: @gold;
+            color: @white;
+        }
+
+        @media @tablet {
+            padding: .5rem 2rem;
+        }
+
+        @media @mobile {
+            padding: .2rem 1rem;
+            font-size: .8rem;
+        }
+
+        @media @mobile-sm {
+            display: none;
+        }
+    }
+}

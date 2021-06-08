@@ -1,0 +1,44 @@
+// main: ../style.less
+
+.slick-arrow {
+    font-size: 0;
+    color: transparent;
+    
+    border: 0;
+    background: none;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow:after {
+    
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}

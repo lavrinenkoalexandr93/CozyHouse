@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.donation-inner {
+    padding: 2.33333rem 0 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media @tablet {
+        padding: 0;
+    }
+}
+
+.donation-item {
+    flex: 0 0 50%;
+    padding: 1rem;
+
+    @media @mobile {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+.donation-item__img {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+.donation-text {
+   
+    color: @gray;
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+
+    @media @mobile {
+        text-align: left;
+    }
+
+}
+
+.donation-bank {
+    display: flex;
+    
+    vertical-align: middle;
+    
+
+    max-width: 320px;
+    margin: 1.5rem 0;
+    background-color: @gold;
+    padding: .5rem;
+    border-radius: .5rem;
+
+    color: @black;
+    font-size: 1.3rem;
+
+    img {
+        margin-right: 2rem;
+
+        @media @mobile {
+            max-height: 30px;
+        }
+    }
+
+    @media @mobile {
+        margin: 1.5rem auto;
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+    }
+}

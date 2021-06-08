@@ -1,0 +1,96 @@
+// main: ../style.less
+
+.friends {
+    background-color: #f6f6f6;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1.3333rem;
+
+    @media @tablet {
+        padding: 1.5rem;
+        padding-top: 0;
+    }
+}
+
+.friends-item {
+    flex: 0 1 33.33333%;
+
+    margin: 0 1.66666rem;
+    padding: 2rem 0;
+
+    background-color: #fafafa;
+    border-radius: 1rem;
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    @media @tablet {
+        
+        margin: 0 1rem;
+        padding: 1.5rem 0;
+        
+    }
+}
+
+.friends-img {
+
+   
+    img {
+        margin: 0 auto;
+        max-width: 273px;
+         max-height: 273px;
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        @media @tablet {
+       
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        @media @mobile-sm {
+            max-width: 52px;
+            max-height: 52px;
+        }
+        
+    }
+
+    
+}
+
+.friends-name {
+    margin: 1.5rem 0;
+
+    color: @black;
+    font-size: 1.33333rem;
+    font-weight: 400;
+
+    @media @tablet {
+        margin: 1rem 0;
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .7rem;
+    }
+}
+
+.friends-btn {
+    @media @mobile {
+        margin-bottom: 1rem;
+    }
+
+    @media @mobile-sm {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
+}
